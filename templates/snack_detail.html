@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h2>Name of Movie: {{ snack.name }}</h2>
+    <h2 class="text-3xl text-green-400 mt-6">Name of Snack: {{ snack.name }}</h2>
+    <p class="text-2xl text-blue-500 mt-3">Description: {{ snack.description }}</p>
+    <p class="text-1xl text-orange-700 mt-2">Purchaser: {{ snack.purchaser }}</p>
 {% endblock content %}

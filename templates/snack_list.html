@@ -2,8 +2,6 @@
 
 {% block content %}
     {% for snack in candy_snacks %}
-        <h2>{{ snack.name }}</h2>
-        <p>{{ snack.description }}</p>
-        <p>{{ snack.purchaser }}</p>
+        <h2 class="text-3xl text-red-700 mt-6"><a href="{% url "snack_detail" snack.pk %}">{{ snack.name }}<a></h2>
     {% endfor %}
 {% endblock content %}
