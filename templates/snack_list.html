@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for snack in candy_snacks %}
+        <h2>{{ snack.name }}</h2>
+        <p>{{ snack.description }}</p>
+        <p>{{ snack.purchaser }}</p>
+    {% endfor %}
+{% endblock content %}
